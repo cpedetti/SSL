@@ -2,6 +2,8 @@
 
 int main(void) {
 
-printf("Hello, World!\n");
+    FILE *f = freopen("output.txt", "w",stdout);
+    printf("Hello, World!");
+    fclose(f);
 
 }
